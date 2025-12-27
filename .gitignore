@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+.env/
+.env.*
+
+# Logs & outputs
+*.log
+trades.csv
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
