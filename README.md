@@ -95,3 +95,10 @@ The strategy intentionally avoids forcing trades. Periods with no valid trades a
 
 This design reflects the observation that MikhailTal markets often resolve quickly and reward disciplined entry more than frequent trading.
 
+
+## Technical Notes
+
+- Trades are executed only when estimated edges exceed conservative thresholds.
+- Position sizing is capped and proportional to the estimated edge to limit per-market exposure.
+- Local state tracking prevents duplicate or overlapping orders.
+- The bot is strictly restricted to markets created by MikhailTal and performs basic liquidity checks before trading.
